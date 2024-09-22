@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI & Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              secondary: "#1111110D",
+              stroke: "rgba(17, 17, 17, 0.3)",
+              nav: "#F9F7F3",
+              para: "#111111B3",
+            },
+            fontFamily: {
+              inter: "Inter",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <header class="sticky top-0 z-10">
+      <!-- Nav Start -->
+      <nav class="w-full bg-nav shadow-sm">
+        <div
+          class="w-10/12 mx-auto flex justify-between items-center py-3 pb-6 max-sm:w-11/12"
+        >
+          <a href="#"
+            ><button class="bg-primary px-4 py-1 rounded-md font-bold">
+              Home
+            </button></a
+          >
+          <span class="flex items-center gap-2">
+            <img class="w-8" src="assets/logo.png" alt="" />
+            <h5 class="font-bold">Donate BD</h5>
+          </span>
+          <span class="flex items-center gap-2">
+            <img src="assets/coin.png" alt="" />
+            <h5 class="font-bold text-para">5500 BDT</h5>
+          </span>
+        </div>
+      </nav>
+
+      <!-- Nav End -->
+    </header>
+  </body>
+</html>
