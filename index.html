@@ -68,18 +68,19 @@
       <nav
         class="pt-12 pb-6 flex justify-center items-center gap-4 backdrop-filter backdrop-blur max-sm:pt-5 max-sm:pb-6"
       >
-        <a href="#"
-          ><button class="bg-primary px-4 py-2 rounded-md font-bold">
-            Donation
-          </button></a
+        <button
+          id="donation-btn"
+          class="bg-primary px-4 py-2 rounded-md font-bold"
         >
-        <a href="#"
-          ><button
-            class="px-4 py-2 border border-stroke text-para rounded-md font-bold"
-          >
-            History
-          </button></a
+          Donation
+        </button>
+
+        <button
+          id="history-btn"
+          class="px-4 py-2 border border-stroke text-para rounded-md font-bold"
         >
+          History
+        </button>
       </nav>
       <!-- Nav End -->
     </header>
@@ -102,7 +103,8 @@
             </div>
 
             <h5 class="text-lg font-bold">
-              Donate for Flood at Noakhali, Bangladesh
+              Donate for
+              <span id="noakhali"> Flood at Noakhali, Bangladesh</span>
             </h5>
             <p class="leading-6 text-para">
               The recent floods in Noakhali have caused significant damage to
@@ -140,7 +142,7 @@
             </div>
 
             <h5 class="text-lg font-bold">
-              Donate for Flood Relief in Feni,Bangladesh
+              Donate for <span id="feni"> Flood Relief in Feni,Bangladesh</span>
             </h5>
             <p class="leading-6 text-para">
               The recent floods in Feni have devastated local communities,
@@ -179,8 +181,8 @@
               </button>
             </div>
 
-            <h5 class="text-lg font-bold">
-              Aid for Injured in the Quota Movement
+            <h5 id="movement" class="text-lg font-bold">
+              Aid for Injured in the Quota Movement,Bangladesh
             </h5>
             <p class="leading-6 text-para">
               The recent Quota movement has resulted in numerous injuries and
@@ -208,7 +210,10 @@
 
       <!-- Transection Part -->
 
-      <figure class="flex flex-col gap-4"></figure>
+      <figure
+        id="history-page"
+        class="flex flex-col gap-4 my-10 hidden"
+      ></figure>
     </main>
     <script src="JS/utility.js"></script>
     <script src="JS/index.js"></script>
