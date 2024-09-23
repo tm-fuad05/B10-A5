@@ -46,7 +46,7 @@
         <div
           class="w-10/12 mx-auto flex justify-between items-center py-3 pb-6 max-sm:w-11/12"
         >
-          <a href="#"
+          <a id="blog" href="#"
             ><button class="bg-primary px-4 py-1 rounded-md font-bold">
               Blog
             </button></a
@@ -86,7 +86,7 @@
       >
         <img src="assets/noakhali.png" alt="" />
         <!-- Content -->
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
           <div>
             <button
               class="bg-secondary rounded-md flex gap-2 items-center py-1 px-3 cursor-text"
@@ -123,7 +123,7 @@
       >
         <img src="assets/feni.png" alt="" />
         <!-- Content -->
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
           <div>
             <button
               class="bg-secondary rounded-md flex gap-2 items-center py-1 px-3 cursor-text"
@@ -157,12 +157,13 @@
         </div>
         <!-- Card-3 -->
       </section>
+      <!-- Card-3  -->
       <section
         class="border-2 border-secondary rounded-xl p-5 flex justify-between items-center gap-7 mb-6 max-sm:flex-col"
       >
         <img src="assets/quota-protest.png" alt="" />
         <!-- Content -->
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-4">
           <div>
             <button
               class="bg-secondary rounded-md flex gap-2 items-center py-1 px-3 cursor-text"
@@ -197,5 +198,10 @@
         </div>
       </section>
     </main>
+    <script>
+      document.getElementById("blog").addEventListener("click", function () {
+        window.location.href = "blog.html";
+      });
+    </script>
   </body>
 </html>
