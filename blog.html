@@ -51,11 +51,13 @@
         <div
           class="w-10/12 mx-auto flex justify-between items-center py-3 pb-6 max-sm:w-11/12"
         >
-          <a id="home-btn" href=""
-            ><button class="bg-primary px-4 py-1 rounded-md font-bold">
-              Home
-            </button></a
+          <button
+            id="home-btn"
+            class="bg-primary px-4 py-1 rounded-md font-bold"
           >
+            Home
+          </button>
+
           <span class="flex items-center gap-2">
             <img class="w-8" src="assets/logo.png" alt="" />
             <h5 class="font-bold">Donate BD</h5>
@@ -139,6 +141,12 @@
       </section>
     </main>
 
-    <script></script>
+    <script>
+      document
+        .getElementById("home-btn")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
   </body>
 </html>

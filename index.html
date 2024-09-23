@@ -46,11 +46,13 @@
         <div
           class="w-10/12 mx-auto flex justify-between items-center py-3 pb-6 max-sm:w-11/12"
         >
-          <a id="blog" href="#"
-            ><button class="bg-primary px-4 py-1 rounded-md font-bold">
-              Blog
-            </button></a
+          <button
+            id="blog-btn"
+            class="bg-primary px-4 py-1 rounded-md font-bold"
           >
+            Blog
+          </button>
+
           <span class="flex items-center gap-2">
             <img class="w-8" src="assets/logo.png" alt="" />
             <h5 class="font-bold">Donate BD</h5>
@@ -199,9 +201,11 @@
       </section>
     </main>
     <script>
-      document.getElementById("blog").addEventListener("click", function () {
-        window.location.href = "blog.html";
-      });
+      document
+        .getElementById("blog-btn")
+        .addEventListener("click", function () {
+          window.location.href = "blog.html";
+        });
     </script>
   </body>
 </html>
