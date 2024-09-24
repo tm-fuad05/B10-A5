@@ -4,8 +4,8 @@ document.getElementById("donate-1").addEventListener("click", function () {
 
   document.getElementById("input-1").value = "";
 
-  if (isNaN(addMoney)) {
-    alert("Please input a number");
+  if (isNaN(addMoney) || addMoney < 0) {
+    alert("Invalid Donation amount");
     return;
   }
 
@@ -51,8 +51,8 @@ document.getElementById("donate-2").addEventListener("click", function () {
 
   document.getElementById("input-2").value = "";
 
-  if (isNaN(addMoney2)) {
-    alert("Please input a number");
+  if (isNaN(addMoney2) || addMoney2 < 0) {
+    alert("Invalid Donation amount");
     return;
   }
 
@@ -98,8 +98,8 @@ document.getElementById("donate-3").addEventListener("click", function () {
 
   document.getElementById("input-3").value = "";
 
-  if (isNaN(addMoney3)) {
-    alert("Please input a number");
+  if (isNaN(addMoney3) || addMoney3 < 0) {
+    alert("Invalid Donation amount");
     return;
   }
 
