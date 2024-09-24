@@ -1,13 +1,13 @@
 document.getElementById("history-btn").addEventListener("click", function () {
   const historyBtn = document.getElementById("history-btn");
 
-  historyBtn.classList.remove("border", "border-stroke", "text-para");
+  historyBtn.classList.remove("bg-secondary", "text-para");
   historyBtn.classList.add("bg-primary", "text-black");
 
   const donationBtn = document.getElementById("donation-btn");
 
   donationBtn.classList.remove("bg-primary");
-  donationBtn.classList.add("text-para", "border", "border-stroke");
+  donationBtn.classList.add("bg-secondary", "text-para");
 
   const donationPage = document.getElementById("donation-page");
 
@@ -19,13 +19,12 @@ document.getElementById("history-btn").addEventListener("click", function () {
 document.getElementById("donation-btn").addEventListener("click", function () {
   const historyBtn = document.getElementById("history-btn");
 
-  historyBtn.classList.add("border", "border-stroke", "text-para");
-  historyBtn.classList.remove("bg-primary", "text-black");
+  historyBtn.classList.add("bg-secondary", "text-para");
+  historyBtn.classList.remove("text-black");
 
   const donationBtn = document.getElementById("donation-btn");
 
-  donationBtn.classList.add("bg-primary");
-  donationBtn.classList.remove("text-para", "border", "border-stroke");
+  donationBtn.className = "bg-primary px-4 py-2 rounded-md font-bold";
 
   const donationPage = document.getElementById("donation-page");
 

@@ -77,14 +77,14 @@
 
         <button
           id="history-btn"
-          class="px-4 py-2 border border-stroke text-para rounded-md font-bold"
+          class="px-4 py-2 bg-secondary text-para rounded-md font-bold"
         >
           History
         </button>
       </nav>
       <!-- Nav End -->
     </header>
-    <main class="w-10/12 mx-auto">
+    <main class="w-10/12 mx-auto max-sm:w-11/12">
       <figure id="donation-page">
         <!-- Card-1 -->
         <section
@@ -215,6 +215,36 @@
         class="flex flex-col gap-4 my-10 hidden"
       ></figure>
     </main>
+
+    <!-- Modal  -->
+
+    <figure
+      id="modal-container"
+      class="bg-[rgba(0,0,0,0.3)] fixed top-0 w-full h-full flex justify-center items-center z-10 hidden"
+    >
+      <div
+        id="modal"
+        class="bg-nav w-4/12 flex flex-col justify-center items-center gap-4 py-8 rounded-xl"
+      >
+        <h1 class="text-3xl font-extrabold">Congrates!</h1>
+        <img src="assets/coin.png" alt="" />
+        <p class="text-para text-md font-semibold">
+          You have donated for Humankind
+        </p>
+        <h4 class="text-xl font-bold">Successfully</h4>
+        <div class="card-actions justify-end">
+          <button
+            id="close"
+            class="bg-secondary px-4 py-2 rounded-md font-bold"
+          >
+            close confirmation
+          </button>
+        </div>
+      </div>
+    </figure>
+
+    <!-- Script Js -->
+
     <script src="JS/utility.js"></script>
     <script src="JS/index.js"></script>
     <script src="JS/donation-history.js"></script>

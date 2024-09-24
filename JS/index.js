@@ -28,7 +28,7 @@ document.getElementById("donate-1").addEventListener("click", function () {
   const noakhali = document.getElementById("noakhali").innerText;
 
   const historyItem = document.createElement("div");
-  historyItem.className = "p-5 border border-secondary";
+  historyItem.className = "p-5 border border-secondary rounded-xl";
   historyItem.innerHTML = `
   
   <h5 class="text-lg font-bold">${addMoney} TK is donated for ${noakhali}</h5>
@@ -38,6 +38,11 @@ document.getElementById("donate-1").addEventListener("click", function () {
   const hisotyFigure = document.getElementById("history-page");
 
   hisotyFigure.insertBefore(historyItem, hisotyFigure.firstChild);
+
+  // Show Modal----->>
+  const modalContainer = document.getElementById("modal-container");
+
+  modalContainer.classList.remove("hidden");
 });
 
 // card-2
@@ -70,7 +75,7 @@ document.getElementById("donate-2").addEventListener("click", function () {
   const feni = document.getElementById("feni").innerText;
 
   const historyItem = document.createElement("div");
-  historyItem.className = "p-5 border border-secondary";
+  historyItem.className = "p-5 border border-secondary rounded-xl";
   historyItem.innerHTML = `
   
   <h5 class="text-lg font-bold">${addMoney2} TK is donated for ${feni}</h5>
@@ -80,6 +85,11 @@ document.getElementById("donate-2").addEventListener("click", function () {
   const hisotyFigure = document.getElementById("history-page");
 
   hisotyFigure.insertBefore(historyItem, hisotyFigure.firstChild);
+
+  // Show Modal----->>
+  const modalContainer = document.getElementById("modal-container");
+
+  modalContainer.classList.remove("hidden");
 });
 
 // card-3
@@ -112,7 +122,7 @@ document.getElementById("donate-3").addEventListener("click", function () {
   const movement = document.getElementById("movement").innerText;
 
   const historyItem = document.createElement("div");
-  historyItem.className = "p-5 border border-secondary";
+  historyItem.className = "p-5 border border-secondary rounded-xl";
   historyItem.innerHTML = `
   
   <h5 class="text-lg font-bold">${addMoney3} TK is donated for ${movement}</h5>
@@ -122,4 +132,16 @@ document.getElementById("donate-3").addEventListener("click", function () {
   const hisotyFigure = document.getElementById("history-page");
 
   hisotyFigure.insertBefore(historyItem, hisotyFigure.firstChild);
+
+  // Show Modal----->>
+  const modalContainer = document.getElementById("modal-container");
+
+  modalContainer.classList.remove("hidden");
+});
+
+// Hide Modal
+document.getElementById("close").addEventListener("click", function () {
+  const modalContainer = document.getElementById("modal-container");
+
+  modalContainer.classList.add("hidden", true);
 });
