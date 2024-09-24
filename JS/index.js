@@ -28,11 +28,12 @@ document.getElementById("donate-1").addEventListener("click", function () {
   const noakhali = document.getElementById("noakhali").innerText;
 
   const historyItem = document.createElement("div");
-  historyItem.className = "p-5 border border-secondary rounded-xl";
+  historyItem.className =
+    "p-5 border border-secondary rounded-xl flex flex-col gap-2";
   historyItem.innerHTML = `
   
   <h5 class="text-lg font-bold">${addMoney} TK is donated for ${noakhali}</h5>
-  <p class="text-para text-sm">${new Date().toLocaleDateString()}</p>
+  <p class="text-para text-sm">${new Date()}</p>
   
   `;
   const hisotyFigure = document.getElementById("history-page");
@@ -75,11 +76,12 @@ document.getElementById("donate-2").addEventListener("click", function () {
   const feni = document.getElementById("feni").innerText;
 
   const historyItem = document.createElement("div");
-  historyItem.className = "p-5 border border-secondary rounded-xl";
+  historyItem.className =
+    "p-5 border border-secondary rounded-xl flex flex-col gap-2";
   historyItem.innerHTML = `
   
   <h5 class="text-lg font-bold">${addMoney2} TK is donated for ${feni}</h5>
-  <p class="text-para text-sm">${new Date().toLocaleDateString()}</p>
+  <p class="text-para text-sm">${new Date()}</p>
   
   `;
   const hisotyFigure = document.getElementById("history-page");
@@ -122,11 +124,12 @@ document.getElementById("donate-3").addEventListener("click", function () {
   const movement = document.getElementById("movement").innerText;
 
   const historyItem = document.createElement("div");
-  historyItem.className = "p-5 border border-secondary rounded-xl";
+  historyItem.className =
+    "p-5 border border-secondary rounded-xl flex flex-col gap-2";
   historyItem.innerHTML = `
   
   <h5 class="text-lg font-bold">${addMoney3} TK is donated for ${movement}</h5>
-  <p class="text-para text-sm">${new Date().toLocaleDateString()}</p>
+  <p class="text-para text-sm">${new Date()}</p>
   
   `;
   const hisotyFigure = document.getElementById("history-page");
